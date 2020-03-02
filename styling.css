@@ -45,6 +45,30 @@ header{
   height: 5px;
   border-radius: 25%;
 }
+/*forside i kasser*/
+.flexbg {
+  background: #60302c;
+  max-width: 70px;
+  margin: 10px 20px 10px 20px;
+  display: inline-flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 10px 30px 10px 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+#mad {
+text-align: center;
+}
+#hverdag{
+text-align: center;
+}
+#sundhed{
+text-align: center;
+}
+#andet{
+text-align: center;
+}
+
 
 /* KURV */
 #kurvsection{
