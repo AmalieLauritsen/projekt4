@@ -1,4 +1,3 @@
-
 /* BODY */
 body{
   background: #d9aa71;
@@ -9,6 +8,11 @@ h1, h2, h3{
   font-family: 'Roboto';
 }
 
+button{
+  cursor: pointer;
+}
+
+
 /* HEADER */
 header{
   background: #582326;
@@ -18,10 +22,11 @@ header{
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+  box-sizing: border-box;
+  padding-left: 25px;
 }
 
 #headericons{
-  background: red;
   width: 150px;
   height: 100px;
   display: flex;
@@ -73,64 +78,78 @@ text-align: center;
 text-align: center;
 }
 
-
 /* KURV */
-#kurvsection{
-  background: #F4DDC0;
-  width: 1000px;
-  min-height: 350px;
+#kurv{;
+  margin: 30px 0;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 
-#kurvsection img{
-  width: auto;
-  height: 125px;
+#kurvsection{
+  background: rgba(255, 255, 255, 0.5);
+  width: 75%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
 }
 
 .kurvprodukt{
-  background: red;
   width: 100%;
   height: 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
-.kurvbillede{}
+.kurvbillede img{
+  width: auto;
+  height: 125px;
+}
 
 .kurvbeskrivelse{
-  width: 200px;
+  width: 150px;
   height: auto;
 }
 
-.kurvplusminus{}
-
-.kurvsletknap, .kurvplusknap, .kurvminusknap{
-  width: 50px;
+.kurvsletknap, .kurvplusknap, .kurvminusknap, #kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris{
+  width: auto;
   height: 50px;
-  background: blue;
   border: 0;
   font-size: 30px;
+  background: transparent;
 }
 
-.kurvproduktantal{}
+.kurvptotalpris{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
 
-.kurvtotal{}
+.kurvptotalpris h3{
+  margin: 0 175px;
+}
 
 .tilkassen{
   width: 250px;
   height: 80px;
-  background: #F4DDC0;
+  background: #D9AA71;
   border: solid black 1px;
   border-radius: 25px;
   font-size: 25px;
 }
 
-button{
-  cursor: pointer;
+.tilkassen:hover{
+  background: rgba(255, 255, 255, 0.5)
 }
 
+
+/* MEDIA QUERIES */
 @media screen and (min-width: 480px) {
     #leftsidebar {width: 200px; float: left;}
     #main {margin-left: 216px;}
