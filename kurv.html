@@ -14,7 +14,7 @@
     <header>
       <h1>KURV</h1>
       <div id="headericons">
-        <a href="kurv.html"><img src="img/ikoner/tekaffe.png" alt="kurv"></a>
+        <a href="kurv.html"><img src="img/ikoner/kurv.png" alt="kurv"></a>
         <a href="burger"><div id="burgermenu">
           <div class="burger"></div>
           <div class="burger"></div>
@@ -26,21 +26,23 @@
     <main>
       <section id="kurvsection">
         <div class="kurvprodukt">
-          <button type="button" name="button" class="kurvsletknap"><p class="sletplusminus">&plus;</p></button>
+          <button type="button" name="button" class="kurvsletknap">&times;</button>
           <div class="kurvbillede">
-            <img src="img/ikoner/toej.png" alt="kurvplusikon">
+            <img src="img/ikoner/toej.png" alt="kurvproduktbillede">
           </div>
           <div class="kurvbeskrivelse"><p>TEST, test, test</p></div>
           <div class="kurvplusminus">
-            <button type="button" name="button" class="kurvplusknap"><p class="sletplusminus">&plus;</p></button>
-            <input type="text" name="" value="1">
-            <button type="button" name="button" class="kurvminusknap"><p class="sletplusminus">&times;</p></button>
+
+            <button type="button" class="kurvminusknap" onclick="minusKnap()">&minus;</button>
+            <input type="button" value="0" id="kurvproduktantal1">
+            <button type="button" class="kurvplusknap" onclick="plusKnap()">&plus;</button>
+
           </div>
           <div class="kurvproduktpris"><p>150kr</p></div>
         </div>
         <div class="kurvptotalpris"><p>350kr</p></div>
       </section>
-      <button type="button" name="button" class="tilkassen">Til kassen</button>
+      <a href="#"><button type="button" name="button" class="tilkassen">Til kassen</button></a>
     </main>
 <!-- FOOTER -->
     <footer></footer>

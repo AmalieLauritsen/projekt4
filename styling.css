@@ -1,5 +1,8 @@
 /* BODY */
-background: #d9aa71;
+body{
+  background: #d9aa71;
+  margin: 0;
+}
 
 h1, h2, h3{
   font-family: 'Roboto';
@@ -38,6 +41,7 @@ header{
   flex-direction: column;
   justify-content: space-between;
 }
+
 .burger{
   background: black;
   width: 30px;
@@ -56,7 +60,7 @@ header{
 
 #kurvsection img{
   width: auto;
-  height: 50px;
+  height: 125px;
 }
 
 .kurvprodukt{
@@ -70,18 +74,37 @@ header{
 
 .kurvbillede{}
 
-.kurvbeskrivelse{}
+.kurvbeskrivelse{
+  width: 200px;
+  height: auto;
+}
 
 .kurvplusminus{}
 
 .kurvsletknap, .kurvplusknap, .kurvminusknap{
   width: 50px;
   height: 50px;
+  background: blue;
+  border: 0;
+  font-size: 30px;
 }
+
+.kurvproduktantal{}
 
 .kurvtotal{}
 
-.tilkassen{}
+.tilkassen{
+  width: 250px;
+  height: 80px;
+  background: #F4DDC0;
+  border: solid black 1px;
+  border-radius: 25px;
+  font-size: 25px;
+}
+
+button{
+  cursor: pointer;
+}
 
 @media screen and (min-width: 480px) {
     #leftsidebar {width: 200px; float: left;}
