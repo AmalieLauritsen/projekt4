@@ -101,15 +101,10 @@ header{
   font-size: 100px;
   text-align: center;
   vertical-align: middle;
-=======
 
-body {
-    background-color: #F4DDC0;
-}
 
 @media screen and (min-width: 480px) {
     #leftsidebar {width: 200px; float: left;}
     #main {margin-left: 216px;}
     #video1 {width: 100%; float: left;}
->>>>>>> 961e53754ae22ad0f93102946a454339d7666b76
 }
