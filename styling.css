@@ -1,1 +1,10 @@
+/* BODY */
 background: #d9aa71;
+margin: 0;
+
+/* HEADER */
+header{
+  background: #582326;
+  width: 100%;
+  height: 100px;
+}
