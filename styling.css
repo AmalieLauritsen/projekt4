@@ -44,3 +44,60 @@ header{
   height: 5px;
   border-radius: 25%;
 }
+
+/* KURV */
+#kurvsection{
+  background: #F4DDC0;
+  width: 1000px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+#kurvsection img{
+  width: auto;
+  height: 50px;
+}
+
+.kurvprodukt{
+  background: red;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kurvslet{}
+
+.kurvbillede{}
+
+.kurvbeskrivelse{}
+
+.kurvplusminus{}
+
+.kurvplusknap, .kurvminusknap{
+  width: 50px;
+  height: 50px;
+}
+
+.sletplusminus{
+  font-size: 50px;
+}
+
+.kurvtotal{}
+
+.tilkassen{}
+
+
+
+.testknap{
+  height: 100px;
+  width: 100px;
+}
+
+.test{
+  font-size: 100px;
+  text-align: center;
+  vertical-align: middle;
+}
