@@ -9,6 +9,10 @@ h1, h2, h3{
   text-decoration: none;
 }
 
+h1{
+  color: white;
+}
+
 button{
   cursor: pointer;
 }
@@ -121,24 +125,20 @@ header{
   height: auto;
 }
 
-.kurvsletknap, .kurvplusknap, .kurvminusknap, #kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris, .kurvtotalvarer, .kurvtotalpris{
+.kurvsletknap, .kurvplusknap, .kurvminusknap, #kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris, .kurvtotalvarer, .kurvtotalpris, .totaltekst{
   min-width: 20%;
   height: 50px;
   border: 0;
   font-size: 30px;
   background: transparent;
+  text-align: center;
 }
 .kurvtotal{
   width: 100%;
-  height: 50px;
-  background: red;
+  height: auto;
   display: flex;
   box-sizing: border-box;
   padding-left: 60%;
-}
-
-.kurvtotalvarer, .kurvtotalpris{
-  background: green;
 }
 
 .tilkassen{
@@ -153,7 +153,6 @@ header{
 .tilkassen:hover{
   background: rgba(255, 255, 255, 0.5)
 }
-
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 480px) {

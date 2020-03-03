@@ -7,6 +7,11 @@ function minusKnap1() {
     document.getElementById("totalpris").value = Number(document.getElementById("totalpris").value) - 150
     document.getElementById("totalvarer").value = Number(document.getElementById("totalvarer").value) - 1;
 }
+
+function sletProdukt(){
+  document.getElementById("totalvarer").value = Number(document.getElementById("totalvarer").value) - 1;
+}
+
 function plusKnap1() {
     document.getElementById("kurvproduktantal1").value = Number(document.getElementById("kurvproduktantal1").value) + 1;
     document.getElementById("produktpris1").value = Number(document.getElementById("produktpris1").value) + 150;
