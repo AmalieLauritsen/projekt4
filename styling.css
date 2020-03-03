@@ -121,7 +121,7 @@ header{
   height: auto;
 }
 
-.kurvsletknap, .kurvplusknap, .kurvminusknap, #kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris{
+.kurvsletknap, .kurvplusknap, .kurvminusknap, #kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris, .kurvptotalpris{
   width: auto;
   height: 50px;
   border: 0;
@@ -129,18 +129,7 @@ header{
   background: transparent;
 }
 
-.kurvptotalpris{
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.kurvptotalpris h3{
-  margin: 0 175px;
-}
+#totalpris{}
 
 .tilkassen{
   width: 250px;
