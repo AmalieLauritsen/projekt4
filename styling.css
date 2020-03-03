@@ -6,6 +6,7 @@ body{
 
 h1, h2, h3{
   font-family: 'Roboto';
+  text-decoration: none;
 }
 
 button{
@@ -79,29 +80,35 @@ header{
   height: 5px;
   border-radius: 25%;
 }
+
+
 /*forside i kasser*/
-.flexbg {
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container1, .container2, .container3, .container4 {
   background: #60302c;
-  max-width: 70px;
-  margin: 10px 20px 10px 20px;
-  display: inline-flex;
-  justify-content: space-around;
+  border: solid #d9aa71 2px;
   box-sizing: border-box;
-  padding: 10px 30px 10px 10px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
-#mad {
-text-align: center;
+
+.front1, .front2, .front3, .front4 {
+  width: 150px;
+  display: block;
 }
-#hverdag{
-text-align: center;
+
+.front1text, .front2text, .front3text, .front4text {
+  text-align: center;
+  color: #d9aa71;
 }
-#sundhed{
-text-align: center;
+.frontlink{
+  text-decoration: none;
 }
-#andet{
-text-align: center;
-}
+
 
 /* KURV */
 #kurv{;
@@ -139,7 +146,7 @@ text-align: center;
   height: auto;
 }
 
-.kurvsletknap, .kurvplusknap, .kurvminusknap, #kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris{
+.kurvsletknap, .kurvplusknap, .kurvminusknap, #kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris, .kurvptotalpris{
   width: auto;
   height: 50px;
   border: 0;
@@ -147,18 +154,7 @@ text-align: center;
   background: transparent;
 }
 
-.kurvptotalpris{
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.kurvptotalpris h3{
-  margin: 0 175px;
-}
+#totalpris{}
 
 .tilkassen{
   width: 250px;
