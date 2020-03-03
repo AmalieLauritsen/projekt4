@@ -15,7 +15,7 @@ button{
 
 /* HEADER */
 header{
-  background: #582326;
+  background: #A68568;
   width: 100%;
   height: 100px;
   display: flex;
@@ -37,6 +37,31 @@ header{
 #headericons img{
   width: auto;
   height: 100px;
+}
+
+.menu{
+    width: 100%;
+    height: 15px;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    line-height: 5px;
+    background-color:#582326;
+    
+}
+
+.menu li{
+    display: inline-block;
+    margin: 10px 80px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: : 5px 10px;
+    font-family: sans-serif;
+    letter-spacing: 2px; 
+    
 }
 
 /* BURGERMENU */
