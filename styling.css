@@ -6,6 +6,7 @@ body{
 
 h1, h2, h3{
   font-family: 'Roboto';
+  text-decoration: none;
 }
 
 button{
@@ -54,24 +55,35 @@ header{
   height: 5px;
   border-radius: 25%;
 }
+
+
 /*forside i kasser*/
-.flexbg {
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container1, .container2, .container3, .container4 {
   background: #60302c;
-  max-width: 70px;
-  margin: 10px 20px 10px 20px;
-  display: inline-flex;
-  justify-content: space-around;
+  border: solid #d9aa71 2px;
   box-sizing: border-box;
-  padding: 10px 30px 10px 10px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.5);
-
 }
 
-.front {
-  text-decoration: none;
+.front1, .front2, .front3, .front4 {
+  width: 150px;
+  display: block;
+}
+
+.front1text, .front2text, .front3text, .front4text {
+  text-align: center;
   color: #d9aa71;
-  font-size: 14px;
 }
+.frontlink{
+  text-decoration: none;
+}
+
 
 /* KURV */
 #kurv{;
