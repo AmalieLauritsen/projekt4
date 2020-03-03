@@ -92,7 +92,7 @@ header{
 
 .kurvprodukt{
   width: 100%;
-  height: 150px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -109,15 +109,25 @@ header{
   height: auto;
 }
 
-.kurvsletknap, .kurvplusknap, .kurvminusknap, #kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris, .kurvptotalpris{
-  width: auto;
+.kurvsletknap, .kurvplusknap, .kurvminusknap, #kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris, .kurvtotalvarer, .kurvtotalpris{
+  min-width: 20%;
   height: 50px;
   border: 0;
   font-size: 30px;
   background: transparent;
 }
+.kurvtotal{
+  width: 100%;
+  height: 50px;
+  background: red;
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 60%;
+}
 
-#totalpris{}
+.kurvtotalvarer, .kurvtotalpris{
+  background: green;
+}
 
 .tilkassen{
   width: 250px;
