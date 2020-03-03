@@ -64,18 +64,13 @@ header{
   box-sizing: border-box;
   padding: 10px 30px 10px 10px;
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
+
 }
-#mad {
-text-align: center;
-}
-#hverdag{
-text-align: center;
-}
-#sundhed{
-text-align: center;
-}
-#andet{
-text-align: center;
+
+.front {
+  text-decoration: none;
+  color: #d9aa71;
+  font-size: 14px;
 }
 
 /* KURV */
