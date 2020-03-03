@@ -7,14 +7,14 @@
     <meta name="keywords" content="sundhed,krystaller,økologi,kosttilskud,vegansk,naturligt,fødevare,biodynamisk,velvære,naturkost">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="javascript.js"></script>
-    <title>Din kruv - Naturkost Odense</title>
+    <title>Din kurv - Naturkost Odense</title>
   </head>
   <body>
 <!-- HEADER -->
     <header>
       <h1>KURV</h1>
       <div id="headericons">
-        <a href="kurv.html"><img src="img/ikoner/tekaffe.png" alt="kurv"></a>
+        <a href="kurv.html"><img src="img/ikoner/kurv.png" alt="kurv"></a>
         <a href="burger"><div id="burgermenu">
           <div class="burger"></div>
           <div class="burger"></div>
@@ -23,29 +23,55 @@
       </div>
     </header>
 <!-- MAIN -->
-    <main>
-
+    <main id="kurv">
       <section id="kurvsection">
+  <!-- PRODUKT1 -->
         <div class="kurvprodukt">
-          <div class="kurvslet"><p class="sletplusminus">&times;</p></div>
+          <button type="button" name="button" class="kurvsletknap">&times;</button>
           <div class="kurvbillede">
-            <img src="img/ikoner/toej.png" alt="kurvplusikon">
+            <img src="img/ikoner/mad.png" alt="kurvproduktbillede">
           </div>
-          <div class="kurvbeskrivelse"><p>TEST, test, test</p></div>
+          <div class="kurvbeskrivelse"><p>Et prudukt under 'Mad'-katagorien</p></div>
           <div class="kurvplusminus">
-            <button type="button" name="button" class="kurvplusknap"><p class="sletplusminus">&plus;</p></button>
-            <input type="text" name="" value="1">
-            <button type="button" name="button" class="kurvminusknap"><p class="sletplusminus">&minus;</p></button>
+            <button type="button" class="kurvminusknap" onclick="minusKnap1()">&minus;</button>
+            <input type="button" value="1" id="kurvproduktantal1">
+            <button type="button" class="kurvplusknap" onclick="plusKnap1()">&plus;</button>
           </div>
-          <div class="kurvproduktpris"><p>150kr</p></div>
+          <input type="button" class="kurvproduktpris" value="150" id="produktpris1">
         </div>
-        <div class="kurvptotalpris"><p>350kr</p></div>
+  <!-- PRODUKT2 -->
+        <div class="kurvprodukt">
+          <button type="button" name="button" class="kurvsletknap">&times;</button>
+          <div class="kurvbillede">
+            <img src="img/ikoner/hverdag.png" alt="kurvproduktbillede">
+          </div>
+          <div class="kurvbeskrivelse"><p>Et prudukt under 'Hverdag'-katagorien</p></div>
+          <div class="kurvplusminus">
+            <button type="button" class="kurvminusknap" onclick="minusKnap2()">&minus;</button>
+            <input type="button" value="1" id="kurvproduktantal2">
+            <button type="button" class="kurvplusknap" onclick="plusKnap2()">&plus;</button>
+          </div>
+          <input type="button" class="kurvproduktpris" value="250" id="produktpris2">
+        </div>
+  <!-- PRODUKT3 -->
+        <div class="kurvprodukt">
+          <button type="button" name="button" class="kurvsletknap">&times;</button>
+          <div class="kurvbillede">
+            <img src="img/ikoner/sundhed.png" alt="kurvproduktbillede">
+          </div>
+          <div class="kurvbeskrivelse"><p>Et prudukt under 'Sundhed'-katagorien</p></div>
+          <div class="kurvplusminus">
+            <button type="button" class="kurvminusknap" onclick="minusKnap3()">&minus;</button>
+            <input type="button" value="1" id="kurvproduktantal3">
+            <button type="button" class="kurvplusknap" onclick="plusKnap3()">&plus;</button>
+          </div>
+          <input type="button" class="kurvproduktpris" value="350" id="produktpris3">
+        </div>
+        <div class="kurvptotalpris">
+          <h3>TOTAL</h3><p>350kr</p>
+        </div>
+        <a href="#"><button type="button" name="button" class="tilkassen">Til kassen</button></a>
       </section>
-
-      <button type="button" name="button" class="tilkassen">Til kassen</button>
-
-<button type="button" name="button" class="testknap"><p class="test">&plus;</p></button>
-
     </main>
 <!-- FOOTER -->
     <footer></footer>
