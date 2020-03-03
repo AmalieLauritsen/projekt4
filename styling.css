@@ -11,6 +11,7 @@ h1, h2, h3{
 
 h1{
   color: white;
+
 }
 
 button{
@@ -28,6 +29,7 @@ header{
   justify-content: space-between;
   flex-direction: row;
   padding-left: 25px;
+  box-sizing: border-box;
 }
 
 #headericons{
@@ -198,6 +200,7 @@ header{
   border: solid black 1px;
   border-radius: 25px;
   font-size: 25px;
+  margin: 25px;
 }
 
 .tilkassen:hover{
