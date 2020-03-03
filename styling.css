@@ -1,26 +1,24 @@
 /* BODY */
-body{
+body {
   background: #d9aa71;
   margin: 0;
 }
 
-h1, h2, h3{
+h1, h2, h3, p {
   font-family: 'Roboto';
   text-decoration: none;
 }
 
-h1{
+h1 {
   color: white;
-
 }
 
-button{
+button {
   cursor: pointer;
 }
 
-
 /* HEADER */
-header{
+header {
   background: #A68568;
   width: 100%;
   height: 100px;
@@ -32,7 +30,7 @@ header{
   box-sizing: border-box;
 }
 
-#headericons{
+#headericons {
   width: 150px;
   height: 100px;
   display: flex;
@@ -40,38 +38,36 @@ header{
   align-items: center;
 }
 
-#headericons img{
+#headericons img {
   width: auto;
   height: 100px;
 }
 
-.menu{
-    width: 100%;
-    height: 15px;
-    padding: 15px;
-    margin: auto;
-    text-align: center;
-    line-height: 5px;
-    background-color:#582326;
-
+.menu {
+  width: 100%;
+  height: 15px;
+  padding: 15px;
+  margin: auto;
+  text-align: center;
+  line-height: 5px;
+  background-color: #582326;
 }
 
-.menu li{
-    display: inline-block;
-    margin: 10px 80px;
+.menu li {
+  display: inline-block;
+  margin: 10px 80px;
 }
 
-.menu li a{
-    text-decoration: none;
-    color: white;
-    padding: : 5px 10px;
-    font-family: sans-serif;
-    letter-spacing: 2px;
-
+.menu li a {
+  text-decoration: none;
+  color: white;
+  padding: : 5px 10px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
 }
 
 /* BURGERMENU */
-#burgermenu{
+#burgermenu {
   width: 30px;
   height: 25px;
   display: flex;
@@ -79,18 +75,15 @@ header{
   justify-content: space-between;
 }
 
-.burger{
+.burger {
   background: black;
   width: 30px;
   height: 5px;
   border-radius: 25%;
 }
 
-
 /*FORSIDE*/
-
 #fronticons {
-  margin: 0px 10px 10px 10px;
   padding: 5px 20px 0px 30px;
   width: 100%;
   height: 100px;
@@ -101,10 +94,11 @@ header{
   box-sizing: border-box;
 }
 
-#fronticons img{
+#fronticons img {
   width: auto;
   height: 90px;
 }
+
 .wrapper {
   display: flex;
   flex-direction: row;
@@ -136,19 +130,31 @@ header{
   position: relative;
   bottom: 100px;
 }
-.frontlink{
+
+.frontlink {
   text-decoration: none;
 }
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+  background-color: rgba(169, 169, 169, 0.5);
+  text-align: center;
+  box-sizing: border-box;
+}
 
 /* KURV */
-#kurv{;
+#kurv {
+  ;
   margin: 30px 0;
   display: flex;
   justify-content: center;
 }
 
-#kurvsection{
+#kurvsection {
   background: rgba(255, 255, 255, 0.5);
   width: 75%;
   height: auto;
@@ -158,7 +164,7 @@ header{
   padding: 30px;
 }
 
-.kurvprodukt{
+.kurvprodukt {
   width: 100%;
   height: 100px;
   display: flex;
@@ -167,17 +173,17 @@ header{
   margin-bottom: 30px;
 }
 
-.kurvbillede img{
+.kurvbillede img {
   width: auto;
   height: 125px;
 }
 
-.kurvbeskrivelse{
+.kurvbeskrivelse {
   width: 150px;
   height: auto;
 }
 
-.kurvsletknap, .kurvplusknap, .kurvminusknap, #kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris, .kurvtotalvarer, .kurvtotalpris, .totaltekst{
+.kurvsletknap, .kurvplusknap, .kurvminusknap, #kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris, .kurvtotalvarer, .kurvtotalpris, .totaltekst {
   min-width: 20%;
   height: 50px;
   border: 0;
@@ -185,7 +191,8 @@ header{
   background: transparent;
   text-align: center;
 }
-.kurvtotal{
+
+.kurvtotal {
   width: 100%;
   height: auto;
   display: flex;
@@ -193,7 +200,7 @@ header{
   padding-left: 60%;
 }
 
-.tilkassen{
+.tilkassen {
   width: 250px;
   height: 80px;
   background: #D9AA71;
@@ -203,13 +210,23 @@ header{
   margin: 25px;
 }
 
-.tilkassen:hover{
+.tilkassen:hover {
   background: rgba(255, 255, 255, 0.5)
 }
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 480px) {
-    #leftsidebar {width: 200px; float: left;}
-    #main {margin-left: 216px;}
-    #video1 {width: 100%; float: left;}
+  #leftsidebar {
+    width: 200px;
+    float: left;
+  }
+
+  #main {
+    margin-left: 216px;
+  }
+
+  #video1 {
+    width: 100%;
+    float: left;
+  }
 }
