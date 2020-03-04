@@ -2,6 +2,7 @@
 body {
   background: #d9aa71;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, p {
