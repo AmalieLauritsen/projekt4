@@ -5,13 +5,21 @@ body {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, li {
   font-family: 'Roboto';
   text-decoration: none;
 }
 
 h1 {
   color: white;
+  text-transform: uppercase;
+}
+
+h2{
+  color: #F4DDC0;
+  text-shadow: 3px 2px #C3AB8E;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 button {
@@ -44,29 +52,6 @@ header {
   height: 100px;
 }
 
-.menu {
-  width: 100%;
-  height: 15px;
-  padding: 15px;
-  margin: auto;
-  text-align: center;
-  line-height: 5px;
-  background-color: #582326;
-}
-
-.menu li {
-  display: inline-block;
-  margin: 10px 80px;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: white;
-  padding: : 5px 10px;
-  font-family: sans-serif;
-  letter-spacing: 2px;
-}
-
 /* BURGERMENU */
 #burgermenu {
   width: 30px;
@@ -81,6 +66,34 @@ header {
   width: 30px;
   height: 5px;
   border-radius: 25%;
+}
+
+/* MENU */
+.menu {
+  width: 100%;
+  height: 15px;
+  padding: 15px 0;
+  margin: auto;
+  text-align: center;
+  line-height: 5px;
+  background-color: #582326;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 10px 50px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  padding: : 5px 10px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
 }
 
 /*FORSIDE*/
@@ -136,8 +149,16 @@ header {
   text-decoration: none;
 }
 
+/* HYLDE */
+.hylde{
+  width: 100%;
+  height: 25px;
+  background: #A68568;
+  margin: 0 0 100px 0;
+}
+
+/* FOOTER */
 footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -145,16 +166,18 @@ footer {
   background-color: rgba(169, 169, 169, 0.5);
   text-align: center;
   box-sizing: border-box;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* KURV */
 #kurv {
-  ;
   margin: 30px 0;
   display: flex;
   justify-content: center;
 }
-
 #kurvsection {
   background: rgba(255, 255, 255, 0.5);
   width: 75%;
@@ -164,7 +187,6 @@ footer {
   align-items: center;
   padding: 30px;
 }
-
 .kurvprodukt {
   width: 100%;
   height: 100px;
@@ -173,17 +195,14 @@ footer {
   justify-content: space-between;
   margin-bottom: 30px;
 }
-
 .kurvbillede img {
   width: auto;
   height: 125px;
 }
-
 .kurvbeskrivelse {
   width: 150px;
   height: auto;
 }
-
 .kurvsletknap, .kurvplusknap, .kurvminusknap, #kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris, .kurvtotalvarer, .kurvtotalpris, .totaltekst {
   min-width: 20%;
   height: 50px;
@@ -192,7 +211,6 @@ footer {
   background: transparent;
   text-align: center;
 }
-
 .kurvtotal {
   width: 100%;
   height: auto;
@@ -200,7 +218,6 @@ footer {
   box-sizing: border-box;
   padding-left: 60%;
 }
-
 .tilkassen {
   width: 250px;
   height: 80px;
@@ -210,7 +227,6 @@ footer {
   font-size: 25px;
   margin: 25px;
 }
-
 .tilkassen:hover {
   background: rgba(255, 255, 255, 0.5)
 }
