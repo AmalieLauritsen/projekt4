@@ -170,6 +170,7 @@ main img{
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 /* HYLDE */
