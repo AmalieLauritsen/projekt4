@@ -160,17 +160,23 @@ main{
 }
 
 main img{
-  width: auto;
-  height: 200px;
+  width: 100%;
+  height: auto;
 }
 
 .kategoribilleder{
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-end;
   flex-wrap: wrap;
+}
+
+.kategoribilleder img{
+  width: auto;
+  height: 200px;
+  margin: 0 10px
 }
 
 /* HYLDE */
@@ -178,7 +184,7 @@ main img{
   width: 100%;
   height: 25px;
   background: #A68568;
-  margin: 0 0 100px 0;
+  margin: 0 0 25px 0;
 }
 
 /* KONTAKTSIDE */
