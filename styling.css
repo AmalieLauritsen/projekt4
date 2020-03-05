@@ -150,9 +150,21 @@ header {
 }
 
 /* MAIN */
+main{
+  width: 100%;
+}
+
 main img{
   width: auto;
   height: 200px;
+}
+
+.kategoribilleder{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 
 /* HYLDE */
@@ -161,6 +173,33 @@ main img{
   height: 25px;
   background: #A68568;
   margin: 0 0 100px 0;
+}
+
+/* KONTAKTSIDE */
+#kontaktsbox img{
+  width: 100%;
+  height: auto;
+}
+
+#kontaktsbox{
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kontakoplysninger{
+  width: 300px;
+  height: 300px;
+  background: #60302c;
+  border: solid #d9aa71 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 /* FOOTER */
