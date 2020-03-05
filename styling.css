@@ -6,6 +6,7 @@ body {
 }
 
 #logo{
+  margin-left: 10px;
   width: 400px;
   height: auto;
 }
@@ -41,7 +42,7 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  box-sizing: border-box;
+  box-sizing: border-box; /*SKAL DEN HER VÆRE DER? DEN ER DÅM OG OGGEBOKKE (vil gerne vise dig det)*/
 }
 
 #headericons {
@@ -96,7 +97,7 @@ header {
 .menu li a {
   text-decoration: none;
   color: white;
-  padding: : 5px 10px;
+  padding: 5px 10px;
   font-family: sans-serif;
   letter-spacing: 2px;
 }
@@ -304,5 +305,80 @@ footer {
   #video1 {
     width: 100%;
     float: left;
+  }
+}
+/*FOR MOBILE*/
+@media screen and (max-width: 430px) {
+  #logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  #headericons{
+    width: 100px;
+  }
+  #headericons img{
+    height: 50px;
+  }
+  #fronticons img{
+    height: 70px;
+  }
+  .front1, .front2, .front3, .front4{
+    width: 200px;
+    margin-top: 50px;
+  }
+  .container1, .container2, .container3, .container4{
+    width: 150px;
+    height: 150px;
+  }
+  .front1text, .front2text, .front3text, .front4text {
+    bottom: 80px;
+  }
+/*menu*/
+  .menu{
+    padding: 5px 0px;
+    display: inline-table;
+    font-size: 14px;
+  }
+  .menu li a{
+    letter-spacing: unset;
+  }
+/*kurv*/
+  #kurvsection{
+    padding: 30px 10px;
+  }
+
+  #kurvsection img{
+    height: 100px;
+  }
+
+  .kurvsletknap, .kurvplusknap, .kurvminusknap, #kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris, .kurvtotalvarer, .kurvtotalpris, .totaltekst{
+    min-width: unset;
+    height: unset;
+    font-size: 16px;
+    text-align: unset;
+  }
+  .kurvtotal{
+    display: flex;
+    flex-direction: column;
+    padding-left: 80%;
+  }
+  .tilkassen{
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .kurvbeskrivelse p{
+    font-size: 14px;
+  }
+  .kurvbeskrivelse{
+    width: unset;
+  }
+
+  #frontfooter p {
+    font-size: 14px;
   }
 }
