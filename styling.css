@@ -152,7 +152,7 @@ header {
 /* MAIN */
 main img{
   width: auto;
-  height: 250px;
+  height: 200px;
 }
 
 /* HYLDE */
@@ -176,6 +176,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#frontfooter{
+  position: fixed;
 }
 
 /* KURV */
