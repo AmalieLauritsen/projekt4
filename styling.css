@@ -5,6 +5,11 @@ body {
   scroll-behavior: smooth;
 }
 
+#logo{
+  width: 300px;
+  height: auto;
+}
+
 h1, h2, h3, p, li {
   font-family: 'Roboto';
   text-decoration: none;
