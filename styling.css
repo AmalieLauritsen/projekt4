@@ -149,6 +149,12 @@ header {
   text-decoration: none;
 }
 
+/* MAIN */
+main img{
+  width: auto;
+  height: 250px;
+}
+
 /* HYLDE */
 .hylde{
   width: 100%;
