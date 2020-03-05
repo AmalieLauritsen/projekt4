@@ -4,8 +4,15 @@ body {
   margin: 0;
   scroll-behavior: smooth;
 }
-
+/*med slogan*/
 #logo{
+  margin-left: 10px;
+  width: 400px;
+  height: auto;
+}
+/*uden slogan*/
+#logo1{
+  margin-top: 5px;
   margin-left: 10px;
   width: 400px;
   height: auto;
@@ -312,7 +319,15 @@ footer {
   h1{
     font-size: 20px;
   }
+  /*med slogan*/
   #logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  /*uden slogan*/
+  #logo1{
     display: block;
     margin-left: auto;
     margin-right: auto;
