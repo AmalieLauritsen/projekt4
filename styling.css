@@ -1,1 +1,257 @@
-background: #d9aa71;
+/* BODY */
+body {
+  background: #d9aa71;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, p, li {
+  font-family: 'Roboto';
+  text-decoration: none;
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+h2{
+  color: #F4DDC0;
+  text-shadow: 3px 2px #C3AB8E;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* HEADER */
+header {
+  background: #A68568;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+
+#headericons {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#headericons img {
+  width: auto;
+  height: 100px;
+}
+
+/* BURGERMENU */
+#burgermenu {
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.burger {
+  background: black;
+  width: 30px;
+  height: 5px;
+  border-radius: 25%;
+}
+
+/* MENU */
+.menu {
+  width: 100%;
+  height: 15px;
+  padding: 15px 0;
+  margin: auto;
+  text-align: center;
+  line-height: 5px;
+  background-color: #582326;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 10px 50px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  padding: : 5px 10px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+/*FORSIDE*/
+#fronticons {
+  padding: 5px 20px 0px 30px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+#fronticons img {
+  width: auto;
+  height: 90px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container1, .container2, .container3, .container4 {
+  width: 300px;
+  height: 300px;
+  background: #60302c;
+  border: solid #d9aa71 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.front1, .front2, .front3, .front4 {
+  width: 350px;
+  height: auto;
+  display: block;
+}
+
+.front1text, .front2text, .front3text, .front4text {
+  text-align: center;
+  color: #d9aa71;
+  position: relative;
+  bottom: 100px;
+}
+
+.frontlink {
+  text-decoration: none;
+}
+
+/* MAIN */
+main img{
+  width: auto;
+  height: 250px;
+}
+
+/* HYLDE */
+.hylde{
+  width: 100%;
+  height: 25px;
+  background: #A68568;
+  margin: 0 0 100px 0;
+}
+
+/* FOOTER */
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+  background-color: rgba(169, 169, 169, 0.5);
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* KURV */
+#kurv {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+#kurvsection {
+  background: rgba(255, 255, 255, 0.5);
+  width: 75%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+#kurvprodukt1, #kurvprodukt2, #kurvprodukt3 {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#kurvsection img {
+  width: auto;
+  height: 125px;
+}
+.kurvbeskrivelse {
+  width: 150px;
+  height: auto;
+}
+.kurvsletknap, .kurvplusknap, .kurvminusknap, #kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris, .kurvtotalvarer, .kurvtotalpris, .totaltekst {
+  min-width: 20%;
+  height: 50px;
+  border: 0;
+  font-size: 30px;
+  background: transparent;
+  text-align: center;
+}
+.kurvtotal {
+  width: 100%;
+  height: auto;
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 60%;
+}
+.tilkassen {
+  width: 250px;
+  height: 80px;
+  background: #D9AA71;
+  border: solid black 1px;
+  border-radius: 25px;
+  font-size: 25px;
+  margin: 25px;
+}
+.tilkassen:hover {
+  background: rgba(255, 255, 255, 0.5)
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 480px) {
+  #leftsidebar {
+    width: 200px;
+    float: left;
+  }
+
+  #main {
+    margin-left: 216px;
+  }
+
+  #video1 {
+    width: 100%;
+    float: left;
+  }
+}
