@@ -178,6 +178,10 @@ footer {
   align-items: center;
 }
 
+#frontfooter{
+  position: fixed;
+}
+
 /* KURV */
 #kurv {
   margin: 30px 0;
