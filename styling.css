@@ -332,6 +332,8 @@ footer {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+    margin-top: unset;
+    margin-bottom: 5px;
   }
   #headericons{
     width: 100px;
@@ -340,6 +342,20 @@ footer {
   #headericons img{
     height: 50px;
   }
+  /*Alle varesider*/
+    .menu{
+      padding: 5px 0px;
+      display: inline-table;
+      font-size: 14px;
+    }
+    .menu li a{
+      letter-spacing: unset;
+    }
+    .kategoribilleder img{
+      height: 100px;
+    }
+
+  /*FORSIDE*/
   #fronticons img{
     height: 70px;
   }
@@ -354,15 +370,7 @@ footer {
   .front1text, .front2text, .front3text, .front4text {
     bottom: 80px;
   }
-/*menu*/
-  .menu{
-    padding: 5px 0px;
-    display: inline-table;
-    font-size: 14px;
-  }
-  .menu li a{
-    letter-spacing: unset;
-  }
+
 /*kurv*/
   #kurvsection{
     padding: 30px 10px;
