@@ -4,21 +4,23 @@ body {
   margin: 0;
   scroll-behavior: smooth;
 }
+
 /*med slogan*/
-#logo{
+#logo {
   margin-left: 10px;
   width: 400px;
   height: auto;
 }
+
 /*uden slogan*/
-#logo1{
+#logo1 {
   margin-top: 5px;
   margin-left: 10px;
   width: 400px;
   height: auto;
 }
 
-h1, h2, h3, p, li{
+h1, h2, h3, p, li {
   font-family: 'Roboto';
   text-decoration: none;
 }
@@ -29,7 +31,7 @@ h1 {
   margin-left: 25px;
 }
 
-h2{
+h2 {
   color: #F4DDC0;
   text-shadow: 3px 2px #C3AB8E;
   text-align: center;
@@ -49,15 +51,13 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  box-sizing: border-box; /*SKAL DEN HER VÆRE DER? DEN ER DÅM OG OGGEBOKKE (vil gerne vise dig det)*/
+  box-sizing: border-box;
+  /*SKAL DEN HER VÆRE DER? DEN ER DÅM OG OGGEBOKKE (vil gerne vise dig det)*/
 }
 
-#headericons {
-  width: 150px;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+#headericons{
+  position: absolute;
+  right: 90px;
 }
 
 #headericons img {
@@ -68,7 +68,7 @@ header {
 /* BURGERMENU */
 .burgercontainer {
   z-index: 1;
-  width: 100%;
+  width: 50px;
   height: 100vh;
 }
 
@@ -91,8 +91,9 @@ header {
 }
 
 .burger-menu {
-  width: 30px;
-  height: 27px;
+  margin-right: 40px;
+  width: 35px;
+  height: 30px;
   position: fixed;
   top: 35px;
   right: 10px;
@@ -101,7 +102,6 @@ header {
   flex-direction: column;
   justify-content: space-around;
 }
-
 
 .line {
   width: 100%;
@@ -140,24 +140,6 @@ header {
   position: relative;
   padding: 3px 0;
 }
-
-
-
-
-/*#burgermenu {
-  width: 30px;
-  height: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.burger {
-  background: black;
-  width: 30px;
-  height: 5px;
-  border-radius: 25%;
-}*/
 
 /* MENU */
 .menu {
@@ -226,16 +208,16 @@ header {
 }
 
 /* MAIN */
-main{
+main {
   width: 100%;
 }
 
-main img{
+main img {
   width: 100%;
   height: auto;
 }
 
-.kategoribilleder{
+.kategoribilleder {
   width: 100%;
   height: auto;
   display: flex;
@@ -244,14 +226,14 @@ main img{
   flex-wrap: wrap;
 }
 
-.kategoribilleder img{
+.kategoribilleder img {
   width: auto;
   height: 200px;
   margin: 0 10px
 }
 
 /* HYLDE */
-.hylde{
+.hylde {
   width: 100%;
   height: 25px;
   background: #A68568;
@@ -259,19 +241,18 @@ main img{
 }
 
 /* KONTAKTSIDE */
-#kontaktsbox img{
-  width: 100%;
-  height: auto;
-}
-#kontaktsbox{
+#kontaktsbox {
   width: 100%;
   height: auto;
   margin-top: 100px;
-  display: flex;
   align-items: center;
   justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.kontakoplysninger{
+
+.kontakoplysninger {
   width: 300px;
   height: 300px;
   background: #60302c;
@@ -298,7 +279,7 @@ footer {
   align-items: center;
 }
 
-#frontfooter{
+.fastfooter {
   position: fixed;
 }
 
@@ -308,6 +289,7 @@ footer {
   display: flex;
   justify-content: center;
 }
+
 #kurvsection {
   background: rgba(255, 255, 255, 0.5);
   width: 75%;
@@ -317,6 +299,7 @@ footer {
   align-items: center;
   padding: 30px;
 }
+
 #kurvprodukt1, #kurvprodukt2, #kurvprodukt3 {
   width: 100%;
   height: 100px;
@@ -325,14 +308,17 @@ footer {
   justify-content: space-between;
   margin-bottom: 30px;
 }
+
 #kurvsection img {
   width: auto;
   height: 125px;
 }
+
 .kurvbeskrivelse {
   width: 150px;
   height: auto;
 }
+
 .kurvsletknap, .kurvplusknap, .kurvminusknap, #kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris, .kurvtotalvarer, .kurvtotalpris, .totaltekst {
   min-width: 20%;
   height: 50px;
@@ -341,6 +327,7 @@ footer {
   background: transparent;
   text-align: center;
 }
+
 .kurvtotal {
   width: 100%;
   height: auto;
@@ -348,6 +335,7 @@ footer {
   box-sizing: border-box;
   padding-left: 60%;
 }
+
 .tilkassen {
   width: 250px;
   height: 80px;
@@ -357,35 +345,41 @@ footer {
   font-size: 25px;
   margin: 25px;
 }
+
 .tilkassen:hover {
   background: rgba(255, 255, 255, 0.5)
 }
 
-/* MEDIA QUERIES */
-@media screen and (min-width: 480px) {
-  #main {
-    margin-left: 216px;
+/*OMsiden*/
+#vidcontain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#video1 {
+  width: 600px;
+  float: left;
+}
+
+/*FOR MOBILE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media screen and (max-width: 430px) {
+  h1 {
+    font-size: 17px;
+    margin-left: 15px;
   }
 
-  #video1 {
-    width: 600px;
-    float: left;
-  }
-}
-/*FOR MOBILE*/
-@media screen and (max-width: 430px) {
-  h1{
-    font-size: 20px;
+  /*BURGER*/
+  .burger-menu{
+    margin-right: 10px;
   }
   /*med slogan*/
-  #logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
+  #logo {
+    width: 100%;
   }
+
   /*uden slogan*/
-  #logo1{
+  #logo1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -394,77 +388,93 @@ footer {
     margin-bottom: 5px;
   }
   #headericons{
-    margin-right: 10px;
+    position: unset;
+
   }
-  #headericons img{
-    height: 50px;
+  #headericons img {
+    height: 60px;
+    margin-right: 40px;
   }
+
   /*Alle varesider*/
-    .menu{
-      padding: 5px 0px;
-      display: inline-table;
-      font-size: 14px;
-    }
-    .menu li a{
-      letter-spacing: unset;
-    }
-    .kategoribilleder img{
-      height: 100px;
-    }
-
-  /*FORSIDE*/
-  #fronticons img{
-    height: 70px;
-  }
-  .front1, .front2, .front3, .front4{
-    width: 200px;
-    margin-top: 50px;
-  }
-  .container1, .container2, .container3, .container4{
-    width: 150px;
-    height: 150px;
-  }
-  .front1text, .front2text, .front3text, .front4text {
-    bottom: 80px;
+  .menu {
+    padding: 5px 0px;
+    display: inline-table;
+    font-size: 14px;
   }
 
-/*OMsiden*/
-#video1 {
-  width: 100%;
-}
-
-/*kurv*/
-  #kurvsection{
-    padding: 30px 10px;
+  .menu li a {
+    letter-spacing: unset;
   }
 
-  #kurvsection img{
+  .kategoribilleder img {
     height: 100px;
   }
 
-  .kurvsletknap, .kurvplusknap, .kurvminusknap, #kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris, .kurvtotalvarer, .kurvtotalpris, .totaltekst{
+  /*FORSIDE*/
+  #fronticons img {
+    height: 70px;
+  }
+
+  .front1, .front2, .front3, .front4 {
+    width: 175px;
+    margin-top: 50px;
+  }
+
+  .container1, .container2, .container3, .container4 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .front1text, .front2text, .front3text, .front4text {
+    bottom: 70px;
+  }
+
+  /*OMsiden*/
+  #video1 {
+    width: 100%;
+  }
+
+  /*kurv*/
+  #kurvsection {
+    padding: 30px 10px;
+  }
+
+  #kurvsection img {
+    height: 100px;
+  }
+
+  .kurvsletknap, .kurvplusknap, .kurvminusknap, #kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris, .kurvtotalvarer, .kurvtotalpris, .totaltekst {
     min-width: unset;
     height: unset;
     font-size: 16px;
     text-align: unset;
   }
-  .kurvtotal{
+
+  .kurvtotal {
     display: flex;
     flex-direction: column;
     padding-left: 80%;
   }
-  .tilkassen{
+
+  .tilkassen {
     width: 150px;
     height: 60px;
     font-size: 20px;
     margin: 10px;
   }
 
-  .kurvbeskrivelse p{
+  .kurvbeskrivelse p {
     font-size: 14px;
   }
-  .kurvbeskrivelse{
+
+  .kurvbeskrivelse {
     width: unset;
+  }
+
+  /*KONTAKT*/
+  #kontaktsbox {
+    margin-top: 50px;
   }
 
   #frontfooter p {
