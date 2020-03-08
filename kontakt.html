@@ -1,62 +1,92 @@
 <!DOCTYPE html>
 <html lang=da dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link href="styling.css" rel="stylesheet" type="text/css">
-    <meta name="description" content="Økologiske produkter">
-    <meta name="keywords" content="sundhed,krystaller,økologi,kosttilskud,vegansk,naturligt,fødevare,biodynamisk,velvære,naturkost">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <title>Kontakt - Naturkost Odense</title>
-  </head>
-  <body>
-<!-- HEADER -->
-    <header>
-      <h1>KONTAKT</h1>
-      <a href="main.html">
+
+<head>
+  <meta charset="utf-8">
+  <link href="styling.css" rel="stylesheet" type="text/css">
+  <meta name="description" content="Økologiske produkter">
+  <meta name="keywords" content="sundhed,krystaller,økologi,kosttilskud,vegansk,naturligt,fødevare,biodynamisk,velvære,naturkost">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <title>Kontakt - Naturkost Odense</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>KONTAKT</h1>
+    <a href="main.html">
       <img id="logo1" src="img/logo/naturkostblad.png" alt="vores logo">
-      </a>
-      <div id="headericons">
-        <a href="kurv.html"><img src="img/ikoner/kurv.png" alt="kurv"></a>
-  <!-- BURGERMENU -->
-        <a href="burger"><div id="burgermenu">
-          <div class="burger"></div>
-          <div class="burger"></div>
-          <div class="burger"></div>
-        </div></a>
+    </a>
+    <div id="headericons">
+      <a href="kurv.html"><img src="img/ikoner/kurv.png" alt="kurv"></a>
+      <!-- BURGERMENU -->
+      <div class="burgercontainer">
+        <nav class="navbar">
+          <div class="burger-menu">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+          </div>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="omnaturkost.html" class="nav-link">Om Naturkost</a>
+            </li>
+            <li class="nav-item">
+              <a href="mad.html" class="nav-link">Mad</a>
+            </li>
+            <li class="nav-item">
+              <a href="hverdag.html" class="nav-link">Hverdag</a>
+            </li>
+            <li class="nav-item">
+              <a href="sundhed.html" class="nav-link">Sundhed</a>
+            </li>
+            <li class="nav-item">
+              <a href="andet.html" class="nav-link">Andet</a>
+            </li>
+            <li class="nav-item">
+              <a href="kontakt.html" class="nav-link">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </header>
-<!-- MAIN -->
-    <main>
-      <h1>Kontakt Naturkost</h1>
-      <section id="kontaktsbox">
-        <!-- ADRESSE -->
-        <div class="kontakoplysninger">
-          <h2>Adresse</h2>
-          <p>Gravene 8, 5000 Odense C</p>
-        </div>
-        <!-- MAIL -->
-        <div class="kontakoplysninger">
-          <h2>E-mail</h2>
-          <p>mail@naturkost-odense.dk</p>
-        </div>
-        <!-- TELEFON -->
-        <div class="kontakoplysninger">
-          <h2>Telefon</h2>
-          <p>+45 6613 7013</p>
-          <p>Mandag-fredag kl. 9.00-17.30</p>
-        </div>
-        <!-- ÅBNINGSTIDER -->
-        <div class="kontakoplysninger">
-          <h2>Åbningstider</h2>
-          <p>Mandag-torsdag kl. 9.00-17.30</p>
-          <p>Fredag kl. 9.00-18.00</p>
-          <p>Lørdag kl. 9.00-14.00</p>
-        </div>
-      </section>
-    </main>
-<!-- FOOTER -->
-    <footer id="frontfooter">
-      <p>&copy Naturkost 2020</p>
-    </footer>
-  </body>
+
+      <script src="burgerscript.js"></script>
+  </header>
+  <!-- MAIN -->
+  <main>
+    <h1>Kontakt Naturkost</h1>
+    <section id="kontaktsbox">
+      <!-- ADRESSE -->
+      <div class="kontakoplysninger">
+        <h2>Adresse</h2>
+        <p>Gravene 8, 5000 Odense C</p>
+      </div>
+      <!-- MAIL -->
+      <div class="kontakoplysninger">
+        <h2>E-mail</h2>
+        <p>mail@naturkost-odense.dk</p>
+      </div>
+      <!-- TELEFON -->
+      <div class="kontakoplysninger">
+        <h2>Telefon</h2>
+        <p>+45 6613 7013</p>
+        <p>Mandag-fredag kl. 9.00-17.30</p>
+      </div>
+      <!-- ÅBNINGSTIDER -->
+      <div class="kontakoplysninger">
+        <h2>Åbningstider</h2>
+        <p>Mandag-torsdag kl. 9.00-17.30</p>
+        <p>Fredag kl. 9.00-18.00</p>
+        <p>Lørdag kl. 9.00-14.00</p>
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer id="frontfooter">
+    <p>&copy Naturkost 2020</p>
+  </footer>
+</body>
+
 </html>

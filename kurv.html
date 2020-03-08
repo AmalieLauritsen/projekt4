@@ -1,87 +1,122 @@
 <!DOCTYPE html>
 <html lang=da dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link href="styling.css" rel="stylesheet" type="text/css">
-    <meta name="description" content="Økologiske produkter">
-    <meta name="keywords" content="sundhed,krystaller,økologi,kosttilskud,vegansk,naturligt,fødevare,biodynamisk,velvære,naturkost">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <script src="javascript.js"></script>
-    <title>Din kurv - Naturkost Odense</title>
-  </head>
-  <body>
-<!-- HEADER -->
-    <header>
-      <h1>DIN KURV</h1>
-      <a href="main.html">
+
+<head>
+  <meta charset="utf-8">
+  <link href="styling.css" rel="stylesheet" type="text/css">
+  <meta name="description" content="Økologiske produkter">
+  <meta name="keywords" content="sundhed,krystaller,økologi,kosttilskud,vegansk,naturligt,fødevare,biodynamisk,velvære,naturkost">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script src="javascript.js"></script>
+  <title>Din kurv - Naturkost Odense</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>DIN KURV</h1>
+    <a href="main.html">
       <img id="logo1" src="img/logo/naturkostblad.png" alt="vores logo">
-      </a>
-      <div id="headericons">
-        <a href="kurv.html"><img src="img/ikoner/kurv.png" alt="kurv"></a>
-  <!-- BURGERMENU -->
-        <a href="burger"><div id="burgermenu">
-          <div class="burger"></div>
-          <div class="burger"></div>
-          <div class="burger"></div>
-        </div></a>
+    </a>
+    <div id="headericons">
+      <a href="kurv.html"><img src="img/ikoner/kurv.png" alt="kurv"></a>
+      <!-- BURGERMENU -->
+      <div class="burgercontainer">
+        <nav class="navbar">
+          <div class="burger-menu">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+          </div>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="omnaturkost.html" class="nav-link">Om Naturkost</a>
+            </li>
+            <li class="nav-item">
+              <a href="mad.html" class="nav-link">Mad</a>
+            </li>
+            <li class="nav-item">
+              <a href="hverdag.html" class="nav-link">Hverdag</a>
+            </li>
+            <li class="nav-item">
+              <a href="sundhed.html" class="nav-link">Sundhed</a>
+            </li>
+            <li class="nav-item">
+              <a href="andet.html" class="nav-link">Andet</a>
+            </li>
+            <li class="nav-item">
+              <a href="kontakt.html" class="nav-link">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </header>
-<!-- MAIN -->
-    <main id="kurv">
-      <section id="kurvsection">
-  <!-- PRODUKT1 -->
-        <div id="kurvprodukt1">
-          <button type="button" name="button" class="kurvsletknap" onclick="sletProdukt1()">&times;</button>
-          <div class="kurvbillede">
-            <img src="img/ikoner/mad.png" alt="kurvproduktbillede">
-          </div>
-          <div class="kurvbeskrivelse"><p>Et produkt under 'Mad'-katagorien</p></div>
-          <div class="kurvplusminus">
-            <button type="button" class="kurvminusknap" onclick="minusKnap1()">&minus;</button>
-            <input type="button" value="1" id="kurvproduktantal1">
-            <button type="button" class="kurvplusknap" onclick="plusKnap1()">&plus;</button>
-          </div>
-          <input type="button" class="kurvproduktpris" value="150" id="produktpris1">
+
+      <script src="burgerscript.js"></script>
+  </header>
+  <!-- MAIN -->
+  <main id="kurv">
+    <section id="kurvsection">
+      <!-- PRODUKT1 -->
+      <div id="kurvprodukt1">
+        <button type="button" name="button" class="kurvsletknap" onclick="sletProdukt1()">&times;</button>
+        <div class="kurvbillede">
+          <img src="img/ikoner/mad.png" alt="kurvproduktbillede">
         </div>
-  <!-- PRODUKT2 -->
-        <div id="kurvprodukt2">
-          <button type="button" name="button" class="kurvsletknap" onclick="sletProdukt2()">&times;</button>
-          <div class="kurvbillede">
-            <img src="img/ikoner/hverdag.png" alt="kurvproduktbillede">
-          </div>
-          <div class="kurvbeskrivelse"><p>Et produkt under 'Hverdag'-katagorien</p></div>
-          <div class="kurvplusminus">
-            <button type="button" class="kurvminusknap" onclick="minusKnap2()">&minus;</button>
-            <input type="button" value="1" id="kurvproduktantal2">
-            <button type="button" class="kurvplusknap" onclick="plusKnap2()">&plus;</button>
-          </div>
-          <input type="button" class="kurvproduktpris" value="250" id="produktpris2">
+        <div class="kurvbeskrivelse">
+          <p>Et produkt under 'Mad'-katagorien</p>
         </div>
-  <!-- PRODUKT3 -->
-        <div id="kurvprodukt3">
-          <button type="button" name="button" class="kurvsletknap" onclick="sletProdukt3()">&times;</button>
-          <div class="kurvbillede">
-            <img src="img/ikoner/sundhed.png" alt="kurvproduktbillede">
-          </div>
-          <div class="kurvbeskrivelse"><p>Et produkt under 'Sundhed'-katagorien</p></div>
-          <div class="kurvplusminus">
-            <button type="button" class="kurvminusknap" onclick="minusKnap3()">&minus;</button>
-            <input type="button" value="1" id="kurvproduktantal3">
-            <button type="button" class="kurvplusknap" onclick="plusKnap3()">&plus;</button>
-          </div>
-          <input type="button" class="kurvproduktpris" value="350" id="produktpris3">
+        <div class="kurvplusminus">
+          <button type="button" class="kurvminusknap" onclick="minusKnap1()">&minus;</button>
+          <input type="button" value="1" id="kurvproduktantal1">
+          <button type="button" class="kurvplusknap" onclick="plusKnap1()">&plus;</button>
         </div>
-        <div class="kurvtotal">
-          <input type="text" class="kurvtotalvarer" value="3" id="totalvarer">
-          <input type="text" class="kurvtotalpris" value="750" id="totalpris">
+        <input type="button" class="kurvproduktpris" value="150" id="produktpris1">
+      </div>
+      <!-- PRODUKT2 -->
+      <div id="kurvprodukt2">
+        <button type="button" name="button" class="kurvsletknap" onclick="sletProdukt2()">&times;</button>
+        <div class="kurvbillede">
+          <img src="img/ikoner/hverdag.png" alt="kurvproduktbillede">
         </div>
-        <a href="#"><button type="button" name="button" class="tilkassen">Til kassen</button></a>
-      </section>
-    </main>
-<!-- FOOTER -->
-    <footer>
-      <p>&copy Naturkost 2020</p>
-    </footer>
-  </body>
+        <div class="kurvbeskrivelse">
+          <p>Et produkt under 'Hverdag'-katagorien</p>
+        </div>
+        <div class="kurvplusminus">
+          <button type="button" class="kurvminusknap" onclick="minusKnap2()">&minus;</button>
+          <input type="button" value="1" id="kurvproduktantal2">
+          <button type="button" class="kurvplusknap" onclick="plusKnap2()">&plus;</button>
+        </div>
+        <input type="button" class="kurvproduktpris" value="250" id="produktpris2">
+      </div>
+      <!-- PRODUKT3 -->
+      <div id="kurvprodukt3">
+        <button type="button" name="button" class="kurvsletknap" onclick="sletProdukt3()">&times;</button>
+        <div class="kurvbillede">
+          <img src="img/ikoner/sundhed.png" alt="kurvproduktbillede">
+        </div>
+        <div class="kurvbeskrivelse">
+          <p>Et produkt under 'Sundhed'-katagorien</p>
+        </div>
+        <div class="kurvplusminus">
+          <button type="button" class="kurvminusknap" onclick="minusKnap3()">&minus;</button>
+          <input type="button" value="1" id="kurvproduktantal3">
+          <button type="button" class="kurvplusknap" onclick="plusKnap3()">&plus;</button>
+        </div>
+        <input type="button" class="kurvproduktpris" value="350" id="produktpris3">
+      </div>
+      <div class="kurvtotal">
+        <input type="text" class="kurvtotalvarer" value="3" id="totalvarer">
+        <input type="text" class="kurvtotalpris" value="750" id="totalpris">
+      </div>
+      <a href="#"><button type="button" name="button" class="tilkassen">Til kassen</button></a>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy Naturkost 2020</p>
+  </footer>
+</body>
+
 </html>

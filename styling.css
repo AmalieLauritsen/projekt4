@@ -66,7 +66,85 @@ header {
 }
 
 /* BURGERMENU */
-#burgermenu {
+.burgercontainer {
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar {
+  width: 275px;
+  height: 85%;
+  background-color: rgba(166, 133, 104, 0.9);
+  position: fixed;
+  top: 0;
+  right: -275px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 0 100%;
+  transition: right 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.change {
+  right: 0;
+}
+
+.burger-menu {
+  width: 30px;
+  height: 27px;
+  position: fixed;
+  top: 35px;
+  right: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  transition: all 0.8s;
+}
+
+.change .line-1 {
+  transform: rotateZ(-405deg) translate(-8px, 6px);
+}
+
+.change .line-2 {
+  opacity: 0;
+}
+
+.change .line-3 {
+  transform: rotateZ(405deg) translate(-8px, -6px);
+}
+
+.nav-list {
+  text-align: right;
+}
+
+.nav-item {
+  list-style: none;
+  margin: 20px 0 0 50px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: relative;
+  padding: 3px 0;
+}
+
+
+
+
+/*#burgermenu {
   width: 30px;
   height: 25px;
   display: flex;
@@ -79,7 +157,7 @@ header {
   width: 30px;
   height: 5px;
   border-radius: 25%;
-}
+}*/
 
 /* MENU */
 .menu {
@@ -110,23 +188,8 @@ header {
 }
 
 /*FORSIDE*/
-#fronticons {
-  padding: 5px 20px 0px 30px;
-  width: 100%;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-
-#fronticons img {
-  width: auto;
-  height: 90px;
-}
-
 .wrapper {
+  margin-top: 60px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -300,17 +363,12 @@ footer {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 480px) {
-  #leftsidebar {
-    width: 200px;
-    float: left;
-  }
-
   #main {
     margin-left: 216px;
   }
 
   #video1 {
-    width: 100%;
+    width: 600px;
     float: left;
   }
 }
@@ -324,7 +382,7 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 90%;
   }
   /*uden slogan*/
   #logo1{
@@ -336,7 +394,6 @@ footer {
     margin-bottom: 5px;
   }
   #headericons{
-    width: 100px;
     margin-right: 10px;
   }
   #headericons img{
@@ -370,6 +427,11 @@ footer {
   .front1text, .front2text, .front3text, .front4text {
     bottom: 80px;
   }
+
+/*OMsiden*/
+#video1 {
+  width: 100%;
+}
 
 /*kurv*/
   #kurvsection{
