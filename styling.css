@@ -317,6 +317,7 @@ footer {
 .kurvbeskrivelse {
   width: 150px;
   height: auto;
+  text-align: center;
 }
 
 .kurvsletknap, .kurvplusknap, .kurvminusknap, #kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris, .kurvtotalvarer, .kurvtotalpris, .totaltekst {
