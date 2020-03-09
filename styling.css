@@ -7,7 +7,6 @@ body {
 
 /*med slogan*/
 #logo {
-  margin-left: 10px;
   width: 400px;
   height: auto;
 }
@@ -383,7 +382,7 @@ footer {
     align-items: center;
     padding: 10px 0;
   }
-#kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris{
+#kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris, .kurvtotalvarer, .kurvtotalpris, .totaltekst{
     font-size: 20px;
     text-align: left;
   }
