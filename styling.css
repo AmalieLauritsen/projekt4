@@ -364,8 +364,20 @@ footer {
 }
 
 /*FOR MOBILE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media screen and (max-width: 1085px) {
+  /* MENU */
+  .menu {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .menu li {
+    margin: 10px;
+  }
+
+
 @media screen and (max-width: 840px) {
-#kurvprodukt1, #kurvprodukt2, #kurvprodukt3 {
+  #kurvprodukt1, #kurvprodukt2, #kurvprodukt3 {
     width: auto;
     height: auto;
     flex-direction: column;
@@ -375,6 +387,19 @@ footer {
 #kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris{
     font-size: 20px;
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 610px){
+  .menu{
+    font-size: 10px;
+  }
+  .menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
   }
 }
 
