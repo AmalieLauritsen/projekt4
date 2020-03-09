@@ -364,6 +364,20 @@ footer {
 }
 
 /*FOR MOBILE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media screen and (max-width: 840px) {
+#kurvprodukt1, #kurvprodukt2, #kurvprodukt3 {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+#kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris{
+    font-size: 20px;
+    text-align: left;
+  }
+}
+
 @media screen and (max-width: 430px) {
   h1 {
     font-size: 17px;
@@ -445,12 +459,6 @@ footer {
     height: 100px;
   }
 
-  .kurvsletknap, .kurvplusknap, .kurvminusknap, #kurvproduktantal1, #kurvproduktantal2, #kurvproduktantal3, .kurvproduktpris, .kurvtotalvarer, .kurvtotalpris, .totaltekst {
-    min-width: unset;
-    height: unset;
-    font-size: 16px;
-    text-align: unset;
-  }
 
   .kurvtotal {
     display: flex;
