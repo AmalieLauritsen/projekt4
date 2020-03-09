@@ -375,13 +375,6 @@ footer {
     margin: 10px;
   }
 
-@media screen and (max-width: 840px) {
-  #logo1 {
-    margin-top: 5px;
-    width: 200px;
-    height: auto;
-  }
-
 /* KURV */
   #kurvprodukt1, #kurvprodukt2, #kurvprodukt3 {
     width: auto;
@@ -396,7 +389,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
   .menu{
     font-size: 10px;
   }
@@ -406,6 +399,15 @@ footer {
   #headericons img {
     width: auto;
     height: 50px;
+  }
+  #logo1 {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #logo1 {
+    width: 150px;
   }
 }
 
